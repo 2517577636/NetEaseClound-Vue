@@ -1,0 +1,65 @@
+:root {
+ --theme-primary: #333;
+ --bg-gray: #ccc;
+ --bg-white: #fff;
+ --bg-red: #C20C0C;
+ --bg-black: #000;
+ --text-color-white: #fff;   
+ --text-color-gray: #ccc;
+
+ --header-height: 70px;
+
+ --radius-sm: 1.5rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: var(--text-color-white);
+    text-decoration: none;
+}
+
+body {
+    /* background-color: var(--theme-primary); */
+    color: var(--text-color-white);
+}
+
+/* ----------------- struct start ----------------- */
+.df {
+    display: flex;
+}
+
+.db {
+    display: block;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.mr-sm {
+    margin-right: 1rem;
+}
+
+.pointer {
+    cursor:pointer;
+}
+/* ----------------- struct end ----------------- */
+
+/* ----------------- font start ----------------- */
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-0 {
+    font-size: 0px;
+}
+/* ----------------- font end ----------------- */

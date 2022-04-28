@@ -1,18 +1,34 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <navList :list="list"></navList>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+// import HelloWorld from '@/components/HelloWorld.vue'
+import navList from "@/components/navlist/index.vue"
 
 export default {
   name: 'HomeView',
+  data() {
+    return {
+      list: [
+        {
+          text: "推荐音乐",
+        },
+        {
+          text: "发现音乐",
+        },
+        {
+          text: "关注",
+        }
+      ]
+    }
+  },
+
   components: {
-    HelloWorld
+    navList
   }
 }
 </script>
